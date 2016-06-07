@@ -14,7 +14,7 @@ var server = require('gulp-server-livereload');
 /**
  * 初始化
  */
-gulp.task('init', ['less', 'es6']);
+gulp.task('init', ['less', 'es6','template']);
 
 /**
  * 启动本地服务器
@@ -47,6 +47,11 @@ gulp.task('run', ['webserver'], function (e) {
     watches6.on('change', function (event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running es6 tasks...');
     });
+
+    var watchtemplate = gulp.watch(['./templates/*.html'], ['template']);
+    watchtemplate.on('change', function (event) {
+        console.log('File ' + event.path + ' was ' + event.type + ', running template tasks...');
+    });
 });
 
 gulp.task('es6', function () {
@@ -55,7 +60,7 @@ gulp.task('es6', function () {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('./src/'));
 });
 
 gulp.task('less', function () {
@@ -75,7 +80,7 @@ gulp.task('template', function () {
         }))
         .pipe(template())
         .pipe(concat('templates.js'))
-        .pipe(gulp.dest('./js/util'));
+        .pipe(gulp.dest('./src/util'));
 });
 
 /**
@@ -93,7 +98,6 @@ gulp.task('clean', function () {
 gulp.task('build', ['init'], function (cb) {
     gulp.src('./css/*/*.css').pipe(minifyCSS()).pipe(gulp.dest('./build/css/'));
     gulp.src('./build/css/maps', {read: false}).pipe(clean());
-    gulp.src('./html/*.html').pipe(gulp.dest('./build/html/'));
-    gulp.src('./js/*/*.js').pipe(gulp.dest('./build/js/'));
+    gulp.src('./src/*/*.*').pipe(gulp.dest('./build/src/'));
     gulp.src('./images/*/*.*').pipe(gulp.dest('./build/images/'));
 });
