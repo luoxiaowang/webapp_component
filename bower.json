@@ -1,0 +1,23 @@
+{
+  "name": "webapp_component",
+  "description": "webapp",
+  "main": "index.js",
+  "authors": [
+    "luoxiao"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "webapp"
+  ],
+  "homepage": "https://github.com/luoxiaowang/webapp_component",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "^1.1.6"
+  }
+}
