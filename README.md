@@ -1,6 +1,6 @@
-### webapp component
+## webapp component
 
-1.Overlay   遮罩层
+### 一.Overlay   遮罩层
 ```
 self.settings = {
             top:0,
@@ -13,6 +13,6 @@ self.settings = {
             display:'none'
         };
 ```
-Method:
+**Method:**
 * show()
 * hide()
