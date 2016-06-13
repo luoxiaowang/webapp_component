@@ -13,11 +13,11 @@ self.settings = {
             display:'none'
         };
 ```
-** Method **
+**Method**
 * show()
 * hide()
 
-** Example **
+**Example**
 ```
 var overlay = new Overlay({
     background:'rgba(0,0,0,.9)'
@@ -29,10 +29,10 @@ overlay.show();
 param:
     text,settings,time
 
-** Method **
+**Method**
 * show()
 
-** Example **
+**Example**
 ```
 var toast = new Toast("登陆成功",{},1000);
 toast.show();

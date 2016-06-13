@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d8dc19-edfc-4388-baf0-82bed8c2d4ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toast/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toast/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toast/toast.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/overlay/overlay.html" afterPath="$PROJECT_DIR$/src/overlay/overlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webapp_component.iws" />
     <ignored path=".idea/workspace.xml" />
