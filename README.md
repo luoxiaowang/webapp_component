@@ -13,6 +13,27 @@ self.settings = {
             display:'none'
         };
 ```
-**Method:**
+** Method **
 * show()
 * hide()
+
+** Example **
+```
+var overlay = new Overlay({
+    background:'rgba(0,0,0,.9)'
+});
+overlay.show();
+```
+
+### 二.Toast   提示框
+param:
+    text,settings,time
+
+** Method **
+* show()
+
+** Example **
+```
+var toast = new Toast("登陆成功",{},1000);
+toast.show();
+```
